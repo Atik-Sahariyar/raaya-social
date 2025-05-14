@@ -2,14 +2,14 @@ const testimonialsSection = document.getElementById("testimonials-section");
 
 testimonialsSection.innerHTML = `
   <div class="testimonials">
-    <h2 class="heading">Client Stories See <span class="emoji">   <img src="../images/watch-imoji.PNG" alt="imoji" heiht="28px"/>      </span> What <br><span class="highlight">Our Partners Say</span></h2>
+    <h2 class="headline">Client Stories See <span class="emoji">   <img src="../images/watch-imoji.PNG" alt="imoji" heiht="28px"/> </span> What <br><span class="highlight">Our Partners Say</span></h2>
 
     <div class="video-slider">
-      ${[1, 2, 3, 4, 5].map(i => `
-        <div class="video-card">
-          <img src="./images/video${i}.jpg" alt="video${i}" />
+      ${Array.from({ length: 5 }).map( ()=> `
+        <div class="t-video-card">
+          <img src="../images/thumbnel.jpg" alt="video" class="t-thumbnel" />
           <button class="play-btn">▶</button>
-          <div class="overlay-text">Safur Hadi <br><span>Influencer</span></div>
+          <div class="overlay-text"><img src="../images/influencer.jpg" class="influencer" alt="user"/> <div>Safur Hadi <br><span class="infu">Influencer</span></div> </div>
         </div>
       `).join('')}
     </div>

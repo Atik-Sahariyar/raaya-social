@@ -59,4 +59,3 @@ faqs.forEach((faq) => {
     faq.querySelector(".icon").textContent = isActive ? "-" : "+";
   });
 });
-s

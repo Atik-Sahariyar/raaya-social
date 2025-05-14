@@ -1,0 +1,85 @@
+#videos-for-personal-brands, #videos-for-business{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 40px 20px;
+}
+.video-wrapper {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+
+.video-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+}
+
+.video-container::-webkit-scrollbar {
+  display: none;
+}
+.video-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(51, 50, 50);
+  color: white;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1;
+  display: block;
+  border-radius: 50%;
+}
+
+.scroll-btn.left {
+  left: 0;
+}
+.scroll-btn.right {
+  right: 0;
+}
+
+.video-card{
+    position: relative;
+    width: 279px;
+    height: 379px;
+    text-align: center;
+}
+
+.thumbnel{
+    width: 279px;
+    height: 326px;
+    border-radius: 14px;
+}
+
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 22px;
+  }
+
+  .video-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .video-card {
+    width: 100%;
+  }
+
+  .thumbnel {
+    height: auto;
+  }
+}

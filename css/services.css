@@ -1,0 +1,105 @@
+.services-section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.headline {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333; /* Darker text color */
+}
+
+.service-cards-wrapper {
+    display: flex;
+    gap: 20px; /* Adjust gap to match the image */
+    justify-content: center;
+    margin-bottom: 30px; /* Adjust margin */
+}
+
+.service-card {
+    width: calc(33.33% - 13.33px);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px; 
+    text-align: left; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.title-head {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-bottom: 15px; 
+}
+
+.check-icon {
+    width: 22px; 
+    height: 22px; 
+}
+
+.title {
+    font-size: 1.1em; /* Slightly smaller title */
+    font-weight: 500;
+    color: #333; /* Darker title text */
+}
+
+.service-img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Match card border-radius */
+    object-fit: cover;
+    margin-bottom: 15px; /* Adjust margin */
+}
+
+.service-description {
+    font-size: 0.9em; /* Slightly smaller description */
+    color: #555; /* Darker description text */
+    line-height: 1.6; /* Improved readability */
+}
+
+.service-cards2-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Adjust gap */
+}
+
+.service-card2 {
+    background-color: #fff;
+    border-radius: 8px; /* Match rounded corners */
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03); /* Softer shadow */
+}
+
+.service-card2 .title {
+    font-size: 1em; /* Adjust title size */
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.service-card2 .service-description {
+    font-size: 0.85em; /* Adjust description size */
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 992px) {
+    .service-cards-wrapper {
+        flex-direction: column; /* Stack cards on smaller screens */
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .headline {
+        font-size: 24px;
+    }
+}

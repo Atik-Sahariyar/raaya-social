@@ -11,26 +11,24 @@
   font-weight: 700;
   margin-bottom: 20px;
 }
-.emoji{
-   height: 28px;
-   width: 50px;
-   margin-top: 10px;
-
-}
-
-.highlight {
-  color: #a855f7;
-}
 
 .video-slider {
   display: flex;
   gap: 16px;
   overflow-x: auto;
   padding: 10px 0;
+  margin-bottom: 15px;
   scroll-snap-type: x mandatory;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
 
-.video-card {
+.video-slider::-webkit-scrollbar {
+  display: none; 
+}
+
+
+.t-video-card {
   position: relative;
   min-width: 256px;
   height: 317px;
@@ -41,10 +39,16 @@
   flex-shrink: 0;
 }
 
-.video-card img {
-  width: 100%;
+.t-video-card .t-thumbnel {
+  width: 256px;
   height: 100%;
   object-fit: cover;
+}
+
+
+
+.infu{
+    font-size: 12px;
 }
 
 .play-btn {
@@ -52,8 +56,9 @@
   top: 45%;
   left: 45%;
   transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(156, 154, 154, 0.8);
   border: none;
+  color: white;
   font-size: 24px;
   border-radius: 50%;
   padding: 10px;
@@ -63,11 +68,21 @@
 .overlay-text {
   position: absolute;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(32, 32, 32, 0.6);
   color: #fff;
   width: 100%;
   padding: 8px;
   font-size: 14px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.influencer{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .review-grid {

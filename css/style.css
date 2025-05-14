@@ -20,8 +20,17 @@ body {
   font-weight: 700;
 }
 
-.faq-section h2 span {
-  color: #a259ff;
+/* common style */
+.emoji img{
+   height: 20px;
+}
+
+.headline{
+    font-weight: 700;
+    font-size: 30px;
+}
+.highlight {
+  color: #a855f7;
 }
 
 .faq-section p {

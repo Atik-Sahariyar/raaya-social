@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+
+/* FAQ section style start */
+.faq-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.faq-section h2 span {
+  color: #a259ff;
+}
+
+.faq-section p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #666;
+  line-height: 1.5;
+  display: none;
+}
+
+.faq.active .faq-answer {
+  display: block;
+}
+
+.faq .icon {
+  font-size: 20px;
+  color: #555;
+  border: 1px solid black;
+  padding: 4px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+
+/* FAQ section style end */
+
+
+
+/* Footer section design start */
+.footer-sec{
+   background-color: #ffffff;
+   display: flex;
+   justify-content: center;
+}
+.footer {
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px; 
+    border-bottom: 1px solid #e2e1e1 ;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section:last-child {
+    margin-right: 0;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-us-text {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-links-title,
+.footer-services-title,
+.contact-us-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-links ul,
+.footer-services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li,
+.footer-services li {
+    margin-bottom: 8px;
+}
+
+.footer-links a,
+.footer-services a {
+    text-decoration: none;
+    color: #777;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-services a:hover {
+    color: #007bff; 
+}
+
+.contact-us input[type="email"],
+.contact-us input[type="tel"],
+.contact-us textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.contact-us textarea {
+    resize: vertical;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button.secondary {
+    background-color: transparent;
+    color: #555;
+    border: 1px solid #ccc;
+}
+
+.button.primary {
+    background-color: #884dff; 
+    color: #fff;
+}
+
+.button.secondary:hover {
+    background-color: #eee;
+}
+
+.button.primary:hover {
+    background-color: #6a37cc;
+}
+
+.submit-button {
+    width: calc(100% - 20px);
+    background-color: #222;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    transition: background-color 0.3s ease;
+ 
+}
+
+.submit-button:hover {
+    background-color: #000;
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px 0;
+  
+    color: #777;
+    background-color: white;
+    font-size: 0.9em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .footer-section {
+        margin-right: 0;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .button-container {
+        justify-content: center;
+    }
+
+    .contact-us {
+        width: 100%;
+    }
+
+    .contact-us input[type="email"],
+    .contact-us input[type="tel"],
+    .contact-us textarea {
+        width: calc(100% - 20px);
+    }
+}
+
+/* Footer section design end */

@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fff; /* Adjust as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333; 
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.logo-container .logo img {
+    height: 50px; 
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #555; /* Adjust link color */
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: purple; /* Adjust hover color */
+}
+
+/* Dropdown Styling */
+.has-dropdown {
+    position: relative;
+}
+
+.dropdown {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-top: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    display: none; /* Initially hidden */
+    min-width: 150px; /* Adjust dropdown width */
+}
+
+.has-dropdown:hover .dropdown {
+    display: block;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #555;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown li a:hover {
+    background-color: #f9f9f9; /* Adjust hover background */
+    color: purple;
+}
+
+.dropdown-icon {
+    margin-left: 5px;
+    font-size: 0.8em;
+}
+
+/* Auth Buttons Styling */
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.login-btn,
+.demo-btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1em;
+}
+
+.login-btn {
+    background-color: transparent;
+    color: #555;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    border-radius: 9999px;
+}
+
+.login-btn:hover {
+    background-color: #f9f9f9;
+    color: purple;
+    border-color: purple;
+}
+
+.demo-btn {
+    background-color: #fff; 
+    border: 1px solid #9b5de5;
+    border-color: purple;
+    border-radius: 9999px;
+    color: #9b5de5;
+    
+}
+
+.demo-btn:hover {
+    background-color: #a855f7; 
+    color: white;
+    border: #a855f7;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 60px;
+        transition: left 0.3s ease-in-out;
+        z-index: 20;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 0;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-link {
+        padding: 15px 20px;
+        display: block;
+    }
+
+    .has-dropdown .nav-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dropdown {
+        position: static;
+        border: none;
+        box-shadow: none;
+        width: 100%;
+        display: none;
+    }
+
+    .has-dropdown.open .dropdown {
+        display: block;
+    }
+
+    .dropdown li a {
+        padding-left: 40px;
+    }
+
+    .auth-buttons {
+        display: none; /* Hide buttons in mobile view, can be added to the menu if needed */
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .auth-buttons button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-container .logo {
+        font-size: 1.2em;
+    }
+}

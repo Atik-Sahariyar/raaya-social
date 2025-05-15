@@ -1,0 +1,137 @@
+#creative-service {
+  max-width: 1200px;
+  padding: 10px 30px;
+  margin: 0 auto;
+}
+
+.service-heading {
+  max-width: 70%;
+  margin: 0 auto 24px;
+  text-align: center;
+}
+
+.highlight {
+  color: #9b5de5;
+}
+
+.service-container {
+  background-color: #ffffff;
+  padding: 28px 24px;
+  border-radius: 16px;
+}
+
+.service-grid {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-left, .service-right {
+  flex: 1 1 350px;
+  min-width: 300px;
+}
+
+.what-provide {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.what-provide img {
+  width: 30px;
+  height: 30px;
+}
+
+.service-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+.c-service-description {
+  margin-left: 30px;
+  margin-top: 0;
+  font-size: 14px;
+  color: #444;
+  padding-right: 10px;
+}
+
+.price-option {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.price-card {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+  background-color: #f9f9f9;
+}
+
+.price-card.active {
+  border-color: #9b5de5;
+  background-color: #f3eaff;
+}
+
+.price-card input[type="radio"] {
+  margin-top: 6px;
+  accent-color: #9b5de5;
+}
+
+.price-card h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.price-card p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.popular-tag {
+  display: inline-block;
+  background-color: #475467;
+  color: white;
+  padding: 4px 12px;
+  font-size: 12px;
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
+
+
+.get-start-btn{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-heading {
+    max-width: 100%;
+  }
+
+  .service-grid {
+    flex-direction: column;
+  }
+
+  .primary-button {
+    width: 100%;
+  }
+}

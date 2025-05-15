@@ -7,7 +7,7 @@ const servicesSection = document.getElementById("services-section");
             description: 'Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video. Our team will help you choose the best hooks & content from your video.'
         },
         {
-            title: 'We structure it for views and watch-time',
+            title: 'We structure it for views and watch-time and time',
             imageSrc: '../images/clip-img.jpg', 
             description: 'Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video. Our team will help you choose the best hooks & content from your video.'
         },
